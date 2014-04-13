@@ -15,5 +15,9 @@ web_profiler:
 swiftmailer:
     disable_delivery: true
 
+doctrine:
+    dbal:
+        wrapper_class: Cheric\ExampleBundle\Doctrine\DBAL\Connection
+
 parameters:
     test.client.class: Cheric\ExampleBundle\Test\Client

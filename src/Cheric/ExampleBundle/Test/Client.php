@@ -46,6 +46,9 @@ class Client extends BaseClient
         if (null === $this->connection) {
             $this->connection = $this->getContainer()->get('doctrine.dbal.default_connection');
         } else {
+            $this->connection->setEventManager(
+                $this->getContainer()->get('doctrine.dbal.default_connection')->getEventManager()
+            );
             $this->getContainer()->set('doctrine.dbal.default_connection', $this->connection);
         }
 
