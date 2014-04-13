@@ -1,0 +1,2 @@
+_cheric_example:
+    resource: "@ChericExampleBundle/Resources/config/routing.yml"

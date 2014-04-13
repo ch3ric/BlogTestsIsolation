@@ -1,0 +1,8 @@
+_secured:
+    resource: "@ChericExampleBundle/Controller/SecuredController.php"
+    type:     annotation
+
+_article:
+    resource: "@ChericExampleBundle/Controller/ArticleController.php"
+    type:     annotation
+    prefix:   /secured
